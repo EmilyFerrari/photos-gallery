@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-bp">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photos Gallery</title>
+</head>
+<body>
     <style>
        *{
             
@@ -103,19 +105,41 @@
             width: fit-content;
         }
 
+        .pesquisa input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 16px;
+            font-family: "Mulish", sans-serif;
+            line-height: 1.2;
+        }
+
+         .pesquisa input::placeholder {
+            color: #000000;
+            opacity: 0.7;
+        }
+
+        .pesquisa form {
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
     <div class="container caixa">
-        <img class="img" src="photo-camera-interface-symbol-for-button.png" alt="logo">
+        <img class="img" src="dslr-camera.png" alt="logo">
          <ul class="a">
             <li>Home</li>
             <li>Galeria</li>
          </ul>
          <div class="pesquisa">
-            <p class="b">Pesquise por imagens ou coleções</p>
+          <form action="">
+            <input id="search input" type="text" placeholder="Pesquise por imagens ou coleções">
+          </form>
          </div>
-         <img class="img2" src="kurome.avif" alt="logo">
+         <img class="img2" src="kurome.jpg" alt="logo">
     </div>
     <div class="background">
         <h1>Galeria</h1>
@@ -123,7 +147,7 @@
        
      
     <div class="card">
-        <img class="t" src="computador.jpg.jpg" alt="">
+        <img class="t" src="comput1.jpg" alt="">
         <p>Workspace elétrica</p>
         <p class="tag">Tag</p>
     </div>
@@ -173,7 +197,5 @@
     <div class="e">
         <p>© 2025 - Web Gallery </p>
     </div>
-    
-
 </body>
 </html>
